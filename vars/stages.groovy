@@ -1,9 +1,11 @@
 
 void call(Closure body){
 
-    stages{    
+    step.stages{    
+
       body()
-      stage("FIN") {
+      
+      step.stage("FIN") {
 
         steps {
           script {
