@@ -1,5 +1,5 @@
 
-void call(Closure body){
+def call(Closure body){
 
     step.stages{    
 
