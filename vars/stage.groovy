@@ -1,4 +1,3 @@
-// support the original node interface
 void call(String label = null, Closure body){
     if(label){
       steps.stage(label){
@@ -6,9 +5,6 @@ void call(String label = null, Closure body){
         body()
        }
     } else {
-      steps.stage{
-        echo "Custom Stage"
-        body()
-      }
+      error "Stage label is required."
     }
 }
