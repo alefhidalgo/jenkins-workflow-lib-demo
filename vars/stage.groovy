@@ -1,8 +1,5 @@
-
-void call(String label, Closure body){
- 
-  steps.stage(label){
-    echo "Custom Stage"
+void call(String label, Closure body){ 
+  steps.stage(label){   
     if (label == "validate"){
       validate()
     } else if(label == "security"){
@@ -10,8 +7,7 @@ void call(String label, Closure body){
     } else {
       body()    
     }
-  }
-   
+  }   
 }
 
 def validate(){
