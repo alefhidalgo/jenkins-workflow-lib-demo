@@ -14,9 +14,9 @@ void call(String label, Closure body){
 }
 
 def validate(){
-  echo "VALIDATE stage"
+  echo "Legacy Validate stage"
 }
 
 def security(){
-  echo "SECURITY stage"
+  echo "Legacy Security stage"
 }
