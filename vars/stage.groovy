@@ -10,6 +10,7 @@ void call(String label, Closure body){
     } else {
       body()    
     }
+  }
    
 }
 
