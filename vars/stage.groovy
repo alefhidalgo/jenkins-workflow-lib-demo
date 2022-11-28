@@ -10,4 +10,5 @@ void call(String label = null, Closure body){
         echo "Custom Stage"
         body()
       }
+    }
 }
