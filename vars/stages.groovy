@@ -1,9 +1,16 @@
 
 void call(Closure body){
 
-    steps.stage(label){
-      echo "Custom Stages"
+    stages{    
       body()
+      stage("FIN") {
+
+        steps {
+          script {
+            echo "FIN"
+          }
+        }
       }
+    }
   
 }

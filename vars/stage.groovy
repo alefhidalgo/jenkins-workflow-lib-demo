@@ -1,6 +1,6 @@
 void call(String label = null, Closure body){
     if(label){
-      steps.stage(label){
+      stage(label){
         echo "Custom Stage"
         body()
        }
